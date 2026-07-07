@@ -22,8 +22,8 @@ age = st.number_input(
 height = st.number_input("Height (cm)")
 weight = st.number_input("Weight (kg)")
 duration = st.number_input("Workout Duration (min)")
-heart_rate = st.number_input("Heart Rate")
-body_temp = st.number_input("Body Temperature")
+heart_rate = st.number_input("Heart Rate (bpm)", min_value=60, max_value=150, value=95)
+body_temp = st.number_input("Body Temperature (°C)", min_value=35.0, max_value=42.0, value=40.0)
 
 
 gender = 0 if gender == "Male" else 1
